@@ -1,0 +1,6 @@
+framework module Pods_SwiftButton {
+  umbrella header "Pods-SwiftButton-umbrella.h"
+
+  export *
+  module * { export * }
+}
