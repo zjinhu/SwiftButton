@@ -92,8 +92,6 @@ class ViewController: UIViewController {
         btn6.handleControlEvent(.touchUpInside) { (btn) in
             print(btn.title as Any)
         }
-        
-        
     }
     
 }
