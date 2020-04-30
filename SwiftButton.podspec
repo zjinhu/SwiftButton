@@ -1,6 +1,6 @@
  
 Pod::Spec.new do |s|
-  s.name             = 'JHButton_Swift'
+  s.name             = 'SwiftButton'
   s.version          = '1.0.0'
   s.summary          = '自定义图文按钮.'
  
@@ -11,11 +11,11 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/jackiehu/' 
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'HU' => '814030966@qq.com' }
-  s.source           = { :git => 'https://github.com/jackiehu/JHButton.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/jackiehu/SwiftButton.git', :tag => s.version.to_s }
  
   s.ios.deployment_target = "9.0"
   s.swift_versions     = ['5.2', '5.1', '5.0', '4.2']
-  s.source_files = 'JHButton/JHButton_Swift/Class/**/*'
+  s.source_files = 'SwiftButton/SwiftButton.swift'
   s.frameworks   = "UIKit" #支持的框架
   s.requires_arc        = true
   s.dependency 'SnapKit'
