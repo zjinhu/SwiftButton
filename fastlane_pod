@@ -1,5 +1,9 @@
 #!/bin/bash
-#!/bin/bash
+
+# 计时
+SECONDS=0
+# 获取工程根目录
+
 fadir()  
 {  
     local this_dir=`pwd`  
@@ -10,8 +14,6 @@ fadir()
 CUR_DIR=$(cd `dirname $0` && pwd -P ) 
 echo "当前文件路径 $CUR_DIR"
 cd $CUR_DIR
-
-
 
 echo "
 
@@ -56,21 +58,75 @@ case $input in
 
     read -p "🚀 请输入版本号: " user_tags
 
-    echo "
-🚀 fastlane release_pod t:$user_tags p:$podspec
-    "
-    
-    # fastlane $podspec tag:$user_tags;;
 
-    fastlane release_pod t:$user_tags p:$podspec 
+echo "
 
-    ;;
+🚀 版本号: V$user_tags 
+
+"
+
+    ;; 
 
     0)
-    exit 
+    exit
     ;;
 esac
 
+
+echo "🎉  🎉  🎉  🎉  🎉  🎉  🎉  🎉  🎉  🎉  🎉  🎉
+
+ "
+echo "是否发布pod到私有仓库？:
+"
+echo "(0) 不是
+"
+#查找文件
+  b=1
+  listRepo=`ls ~/.cocoapods/repos`
+  for i in $listRepo  
+    do  
+    echo "($b) $i
+    "  
+    arrayRepo[$b]=$i
+    b=$(($b+1)) 
+  done  
+echo "
+🎉  🎉  🎉  🎉  🎉  🎉  🎉  🎉  🎉  🎉  🎉  🎉  
+"
+read input
+
+case $input in
+  
+    [1-99])
+
+     repo=${arrayRepo[$input]} 
+    echo "
+🚀 已经选择Repo名称为：$repo
+    "
+
+echo "
+
+🚀 即将发布 V$user_tags 版本的 $podspec 到 $repo 
+
+"
+    fastlane release_pod t:$user_tags p:$podspec r:$repo
+    ;; 
+
+    0)
+    echo "
+
+🚀 即将发布 V$user_tags 版本的 $podspec
+
+"
+    fastlane release_pod t:$user_tags p:$podspec 
+    ;;
+esac
+
+echo "
+
+🚀 总用时: ${SECONDS}s
+
+"
 exit
  
 

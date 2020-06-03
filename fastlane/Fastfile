@@ -4,6 +4,8 @@ lane :release_pod do |options|
  
   target_project = options[:p]
 
+  target_repo  = options[:r]
+
   spec_path = "#{target_project}.podspec"
   # git pull
   git_pull 
@@ -25,7 +27,15 @@ lane :release_pod do |options|
   # 提交 tag
   push_git_tags
   # 验证 spec 文件
-  pod_lib_lint(verbose: true,allow_warnings: true)
-  # pod trunk push 'spec_path'
-  pod_push(path: spec_path, allow_warnings: true,verbose: true)
+  pod_lib_lint(verbose: true, allow_warnings: true)
+  # # pod trunk push 'spec_path'
+  # pod_push(path: spec_path, allow_warnings: true,verbose: true)
+    # 检查是否传了 repo 参数
+  if target_repo
+    # pod repo push 'target_repo' 'spec_path'
+    pod_push(path: spec_path, repo: target_repo, allow_warnings: true, verbose: true)
+  else
+    # pod trunk push 'spec_path'
+    pod_push(path: spec_path, allow_warnings: true, verbose: true)
+  end
 end
