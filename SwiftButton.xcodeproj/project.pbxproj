@@ -53,6 +53,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		816B1D0724C5720D0049DFAE /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				81924D6C245A71DE00555208 /* SwiftButton.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
 		81924D4C245A71C800555208 = {
 			isa = PBXGroup;
 			children = (
@@ -74,9 +82,9 @@
 		81924D57245A71C800555208 /* SwiftButton */ = {
 			isa = PBXGroup;
 			children = (
+				816B1D0724C5720D0049DFAE /* Class */,
 				81924D58245A71C800555208 /* AppDelegate.swift */,
 				81924D5A245A71C800555208 /* SceneDelegate.swift */,
-				81924D6C245A71DE00555208 /* SwiftButton.swift */,
 				81924D5C245A71C800555208 /* ViewController.swift */,
 				81924D5E245A71C800555208 /* Main.storyboard */,
 				81924D61245A71CA00555208 /* Assets.xcassets */,
