@@ -92,6 +92,21 @@ class ViewController: UIViewController {
         btn6.handleControlEvent(.touchUpInside) { (btn) in
             print(btn.title as Any)
         }
+        
+        let btn7 = SwiftButton.init(.imageButtonTypeRight,marginArr: [5,5,5])
+        btn7.backgroundColor = .yellow
+        btn7.image = UIImage.init(named: "image3")
+        btn7.title = "按钮2";
+        btn7.titleLabel.textColor = .red
+        btn7.titleLabel.font = UIFont.systemFont(ofSize: 13)
+        btn7.titleLabel.textAlignment = .left
+        self.view.addSubview(btn7)
+        btn7.snp.makeConstraints { (make) in
+            make.bottom.equalToSuperview().offset(-20)
+            make.left.equalTo(but.snp.left).offset(0)
+            make.width.equalTo(200)
+            make.height.equalTo(50)
+        }
     }
     
 }
