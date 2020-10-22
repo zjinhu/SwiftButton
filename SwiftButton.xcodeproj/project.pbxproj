@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		811293B425417240009F8856 /* SwiftButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811293B325417240009F8856 /* SwiftButton.swift */; };
 		81924D59245A71C800555208 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81924D58245A71C800555208 /* AppDelegate.swift */; };
 		81924D5B245A71C800555208 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81924D5A245A71C800555208 /* SceneDelegate.swift */; };
 		81924D5D245A71C800555208 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81924D5C245A71C800555208 /* ViewController.swift */; };
 		81924D60245A71C800555208 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81924D5E245A71C800555208 /* Main.storyboard */; };
 		81924D62245A71CA00555208 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81924D61245A71CA00555208 /* Assets.xcassets */; };
 		81924D65245A71CA00555208 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81924D63245A71CA00555208 /* LaunchScreen.storyboard */; };
-		81924D6D245A71DE00555208 /* SwiftButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81924D6C245A71DE00555208 /* SwiftButton.swift */; };
 		E20EA253FECF812989CB229E /* Pods_SwiftButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BAC665CF8756E663BFAA3F8 /* Pods_SwiftButton.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7BAC665CF8756E663BFAA3F8 /* Pods_SwiftButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		811293B325417240009F8856 /* SwiftButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftButton.swift; sourceTree = "<group>"; };
 		81924D55245A71C800555208 /* SwiftButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81924D58245A71C800555208 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81924D5A245A71C800555208 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,7 +28,6 @@
 		81924D61245A71CA00555208 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81924D64245A71CA00555208 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81924D66245A71CA00555208 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		81924D6C245A71DE00555208 /* SwiftButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftButton.swift; sourceTree = "<group>"; };
 		858E65DD36A36C3EC1940A2F /* Pods-SwiftButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftButton.release.xcconfig"; path = "Target Support Files/Pods-SwiftButton/Pods-SwiftButton.release.xcconfig"; sourceTree = "<group>"; };
 		DEA6658717458D5704D51C3A /* Pods-SwiftButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftButton.debug.xcconfig"; path = "Target Support Files/Pods-SwiftButton/Pods-SwiftButton.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,13 +53,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		816B1D0724C5720D0049DFAE /* Class */ = {
+		811293B225417240009F8856 /* SwiftButton */ = {
 			isa = PBXGroup;
 			children = (
-				81924D6C245A71DE00555208 /* SwiftButton.swift */,
+				811293B325417240009F8856 /* SwiftButton.swift */,
 			);
-			path = Class;
-			sourceTree = "<group>";
+			name = SwiftButton;
+			path = Sources/SwiftButton;
+			sourceTree = SOURCE_ROOT;
 		};
 		81924D4C245A71C800555208 = {
 			isa = PBXGroup;
@@ -82,7 +83,7 @@
 		81924D57245A71C800555208 /* SwiftButton */ = {
 			isa = PBXGroup;
 			children = (
-				816B1D0724C5720D0049DFAE /* Class */,
+				811293B225417240009F8856 /* SwiftButton */,
 				81924D58245A71C800555208 /* AppDelegate.swift */,
 				81924D5A245A71C800555208 /* SceneDelegate.swift */,
 				81924D5C245A71C800555208 /* ViewController.swift */,
@@ -218,9 +219,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				81924D5D245A71C800555208 /* ViewController.swift in Sources */,
+				811293B425417240009F8856 /* SwiftButton.swift in Sources */,
 				81924D59245A71C800555208 /* AppDelegate.swift in Sources */,
 				81924D5B245A71C800555208 /* SceneDelegate.swift in Sources */,
-				81924D6D245A71DE00555208 /* SwiftButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

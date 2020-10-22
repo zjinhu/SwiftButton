@@ -1,7 +1,7 @@
  
 Pod::Spec.new do |s|
   s.name             = 'SwiftButton'
-  s.version          = '1.0.2'
+  s.version          = '1.1.0'
   s.summary          = '自定义图文按钮.'
  
   s.description      = <<-DESC
@@ -15,10 +15,9 @@ Pod::Spec.new do |s|
  
   s.ios.deployment_target = "10.0"
   s.swift_versions     = ['5.2', '5.1', '5.0', '4.2']
-  s.source_files = 'SwiftButton/SwiftButton.swift'
+  s.source_files = 'Sources/**/*'
   s.frameworks   = "UIKit" #支持的框架
-  s.requires_arc        = true
-  s.dependency 'SnapKit'
+  s.requires_arc = true
 
-  # fastlane release_pod t:1.0.0 p:JHButton_Swift
+  s.dependency 'SnapKit'
 end
