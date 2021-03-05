@@ -93,7 +93,6 @@ public func setBackImage(normalBackImage : UIImage,
 
 ## 使用方法
 
-swift
 ```swift
 let but = JHButton.init(.imageButtonTypeTop)
         but.backgroundColor = .orange
@@ -176,7 +175,18 @@ let but = JHButton.init(.imageButtonTypeTop)
         }
 ```
 
+### 安装
 
-##  许可证
-SwiftButton 使用 MIT 许可证，详情见 LICENSE 文件
+#### cocoapods导入
 
+```
+
+pod 'SwiftButton'
+
+```
+
+#### SPM导入
+
+`https://github.com/jackiehu/SwiftButton`
+
+#### 手动导入
