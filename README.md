@@ -5,6 +5,7 @@
 ![Xcode 9.0+](https://img.shields.io/badge/Xcode-9.0%2B-blue.svg)
 ![iOS 10.0+](https://img.shields.io/badge/iOS-10.0%2B-blue.svg)
 ![Swift 4.2+](https://img.shields.io/badge/Swift-4.2%2B-orange.svg)
+[![Swift 5.0](https://img.shields.io/badge/Swift-5.0-green.svg?style=flat)](https://developer.apple.com/swift/)
 
 swift砖块系列：一个样式多变的Button，支持点击时动态改变大小，边框颜色等等
 
