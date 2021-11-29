@@ -637,20 +637,36 @@ extension SwiftButton{
     
     //MARK: --Touch事件监听
     override open func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
-        setHighLight()
+        if isSelected{
+            setNormal()
+        }else{
+            setHighLight()
+        }
         return true
     }
     
     override open func continueTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
-        setHighLight()
+        if isSelected{
+            setNormal()
+        }else{
+            setHighLight()
+        }
         return true
     }
     
     override open func cancelTracking(with event: UIEvent?) {
-        setNormal()
+        if isSelected{
+            setSelected()
+        }else{
+            setNormal()
+        }
     }
     
     override open func endTracking(_ touch: UITouch?, with event: UIEvent?) {
-        setNormal()
+        if isSelected{
+            setSelected()
+        }else{
+            setNormal()
+        }
     }
 }
