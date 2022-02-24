@@ -1,7 +1,7 @@
  
 Pod::Spec.new do |s|
   s.name             = 'SwiftButton'
-  s.version          = '1.1.0'
+  s.version          = '1.1.1'
   s.summary          = '自定义图文按钮.'
  
   s.description      = <<-DESC
